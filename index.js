@@ -1,10 +1,6 @@
 var currentUser = {
       gender: '',
-      nationality: '',
-      age: '',
-      education: '',
-      companysize: '',
-      location: ''
+      age: ''
 };
 
 var activeClass = "highlighted";
@@ -15,6 +11,9 @@ for (var i = 0, max = selectedValues.length; i < max; i++) {
         currentUser[this.name] = this.value;
         clearState(this.name);
         changeView(currentUser[this.name], this.name);
+
+        // Test Output
+        // console.log(currentUser);
     }
 }
 

@@ -9,75 +9,39 @@
   <style>
     .highlighted{
         color: red;
+		font-weight: 700;
     }
     </style>
   
 </head>
 <body>
-  <section id="third" data-anchor="3" class="section formular">
-    <div class="container_wide">
-      <h2 class="h2_white">Vergleiche dich mit Anderen</h2>
-    </div>
-    <div class="container_wide">
+	<h1>Input</h1>
+	<section>
+		<form id="email-form" name="email-form" data-name="Email Form">
+			<div>
+				<h3>Gender</h3>
+				<input type="radio" id="male" name="gender" value="male" data-name="gender"><label for="male">Male</label>
+				<input type="radio" id="female" name="gender" value="female" data-name="gender"><label for="female" >Female</label>
+			</div>
+			<div>
+				<h3>Age</h3>
+				<input type="radio" id="young" name="age" value="young" data-name="age"><label for="young">Young</label>
+				<input type="radio" id="old" name="age" value="old" data-name="age"><label for="old" >Old</label>
+				<input type="radio" id="reallyOld" name="age" value="reallyOld" data-name="age"><label for="reallyOld" >I mean... really old</label>
+			</div>
+		</form>
+	</section>
 
-      <div class="w-form">
-        <form id="email-form" name="email-form" data-name="Email Form">
-          <div class="w-row">
-            <div class="w-col w-col-6"><label for="geschlecht" class="label_gender">Geschlecht</label>
-              <div class="radio-button-field w-radio"><input type="radio" id="male" name="gender" value="male" data-name="gender" class="w-radio-input"><label for="male" class="radio_label w-form-label">Männlich</label></div>
-              <div class="radio-button-field w-radio"><input type="radio" id="female" name="gender" value="female" data-name="gender" class="w-radio-input"><label for="female" class="radio_label w-form-label">Weiblich</label></div>
-            </div>
-            <div class="w-col w-col-6"><label for="nationality" class="label_nationality">Nationalität</label>
-              <div class="radio-button-field w-radio"><input type="radio" id="german" name="nationality" value="german" data-name="nationality" class="w-radio-input"><label for="german" class="radio_label w-form-label">Deutsch</label></div>
-              <div class="radio-button-field w-radio"><input type="radio" id="foreign" name="nationality" value="foreign" data-name="nationality" class="w-radio-input"><label for="foreign" class="radio_label w-form-label">Ausländisch</label></div>
-            </div>
-          </div>
-          <div class="w-row">
-            <div class="w-col w-col-6"><label for="gebdat" class="label_age">Alter</label>
-              <div class="radio-button-field w-radio"><input type="radio" name="age" value="teens" data-name="age" id="teens" class="w-radio-input"><label for="teens" class="radio_label w-form-label">15-25 Jahre</label></div>
-              <div class="radio-button-field w-radio"><input type="radio" name="age" value="adults" data-name="age" id="adults" class="w-radio-input"><label for="adults" class="radio_label w-form-label">25-35 Jahre</label></div>
-              <div class="radio-button-field w-radio"><input type="radio" name="age" value="boomers" data-name="age" id="boomers" class="w-radio-input"><label for="boomers" class="radio_label w-form-label">35-50 Jahre</label></div>
-              <div class="radio-button-field w-radio"><input type="radio" name="age" value="seniors" data-name="age" id="seniors" class="w-radio-input"><label for="seniors" class="radio_label w-form-label">Älter als 50 Jahre</label></div>
-            </div>
-          </div>
-          <div class="w-row">
-            <div class="w-col w-col-6"><label for="email" class="label_location">Art des Wohnorts</label>
-              <div class="radio-button-field w-radio"><input type="radio" id="rural" name="location" value="rural" data-name="location" class="w-radio-input"><label for="rural" class="radio_label w-form-label">Ländlich</label></div>
-              <div class="radio-button-field w-radio"><input type="radio" id="urban" name="location" value="urban" data-name="location" class="w-radio-input"><label for="urban" class="radio_label w-form-label">Städtisch</label></div>
-            </div>
-          </div>
-          <div class="w-row">
-            <div class="w-col w-col-6"><label for="distanz" class="label_distance">Pendeldistanz</label><input type="number" class="text_field w-input" maxlength="256" name="distance" min="1" data-name="Distanz 2" placeholder="Pendeldistanz in Kilometer" id="distanz-2" required=""></div>
-            <div class="w-col w-col-6"><input id="submit_btn" type="submit" value="Daten übernehmen" data-wait="Bitte warten..." class="button_ghost white formbutton w-button"></div>
-          </div>
-        </form>
-        <div class="success-message w-form-done">
-          <div class="sucess_text">Vielen Dank, deine Angaben werden nun verwendet um dich mit anderen Berufstätigen zu vergleichen.</div>
-        </div>
-        <div class="w-form-fail">
-          <div>Oops! Something went wrong while submitting the form.</div>
-        </div>
-      </div>
-    </div>
-  </section>
-    
-  <h2>test</h2>
-  <div class="gender" title="male">Male</div>
-  <div class="gender" title="female">Female</div>
-  <div class="location" title="rural">Rural</div>
-  <div class="location" title="urban">Urban</div>
-  <div class="nationality" title="german">Deutsch</div>
-  <div class="nationality" title="foreign">Ausländisch</div>
-  <div class="age" title="teens">Teens</div>
-  <div class="age" title="adults">Adults</div>
-  <div class="age" title="boomers">Boomers</div>
-  <div class="age" title="seniors">Senios</div>
+<h2>Output</h2>
+<h3>Gender</h3>
+<div class="gender" title="male">Male</div>
+<div class="gender" title="female">Female</div>
+<h3>Age</h3>
+<div class="age" title="young">Young</div>
+<div class="age" title="old">Old</div>
+<div class="age" title="reallyOld">Living Gandalf</div>
 
-  <script src="index.js"></script>
-  
-  <!-- <script>
-  document.getElementById("defaultOpen").click();
-  </script> -->
+<script src="index.js"></script>
 
 </body>
 </html>
